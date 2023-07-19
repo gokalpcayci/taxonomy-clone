@@ -1,6 +1,6 @@
-export type SiteConfig = typeof siteConfig;
+import { SiteConfig } from "@/types";
 
-export const siteConfig = {
+export const siteConfig: SiteConfig = {
   name: "Taxonomy",
   description:
     "Beautifully designed components built with Radix UI and Tailwind CSS.",
@@ -11,7 +11,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    twitter: "https://twitter.com/shadcn",
+    twitter: "https://twitter.com",
     github: "https://github.com/shadcn/ui",
     docs: "https://ui.shadcn.com",
   },
