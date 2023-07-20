@@ -7,11 +7,13 @@ import {
   Laptop,
   Check,
   X,
+  ChevronLeft,
 } from "lucide-react";
 
 export type Icon = LucideIcon;
 
 export const Icons = {
+  chevronLeft: ChevronLeft,
   close: X,
   check: Check,
   laptop: Laptop,

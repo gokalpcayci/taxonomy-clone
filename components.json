@@ -11,6 +11,12 @@
   "aliases": {
     "components": "@/components",
     "utils": "@/lib/utils",
-    "types": "@/types/nav"
+    "types": "@/types/nav",
+    "hooks": "@/hooks",
+    "styles": "@/styles",
+    "assets": "@/assets",
+    "config": "@/config",
+    "content": "@/content",
+    "lib": "@/lib"
   }
 }

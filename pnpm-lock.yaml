@@ -1,6 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@mdx-js/loader': ^2.3.0
+  '@mdx-js/react': ^2.3.0
+  '@next/mdx': ^13.4.10
   '@radix-ui/react-dropdown-menu': ^2.0.5
   '@radix-ui/react-slot': ^1.0.2
   '@t3-oss/env-nextjs': ^0.6.0
@@ -34,6 +37,9 @@ specifiers:
   zod: ^3.21.4
 
 dependencies:
+  '@mdx-js/loader': 2.3.0
+  '@mdx-js/react': 2.3.0_react@18.2.0
+  '@next/mdx': 13.4.10_msthxdjvrhmdkfpqqalumiidgq
   '@radix-ui/react-dropdown-menu': 2.0.5_hrrtw4it2dqo6rzcqzvl36ff7i
   '@radix-ui/react-slot': 1.0.2_i73ekzlbntu7jol6ph2fvy4mga
   '@t3-oss/env-nextjs': 0.6.0_zno6rcmvi3mruj4xg7lanqhjom
@@ -640,6 +646,17 @@ packages:
       - supports-color
     dev: false
 
+  /@mdx-js/loader/2.3.0:
+    resolution: {integrity: sha512-IqsscXh7Q3Rzb+f5DXYk0HU71PK+WuFsEhf+mSV3fOhpLcEpgsHvTQ2h0T6TlZ5gHOaBeFjkXwB52by7ypMyNg==}
+    peerDependencies:
+      webpack: '>=4'
+    dependencies:
+      '@mdx-js/mdx': 2.3.0
+      source-map: 0.7.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /@mdx-js/mdx/2.3.0:
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
     dependencies:
@@ -664,6 +681,16 @@ packages:
       - supports-color
     dev: false
 
+  /@mdx-js/react/2.3.0_react@18.2.0:
+    resolution: {integrity: sha512-zQH//gdOmuu7nt2oJR29vFhDv88oGPmVw6BggmrHeMI+xgEkp1B2dX9/bMBSYtK0dyLX/aOmesKS09g222K1/g==}
+    peerDependencies:
+      react: '>=16'
+    dependencies:
+      '@types/mdx': 2.0.5
+      '@types/react': 18.2.14
+      react: 18.2.0
+    dev: false
+
   /@next/env/13.3.2-canary.13:
     resolution: {integrity: sha512-5An4FW4riPxsNDOwaFKT8JX0wP++sKB5hHSVUqmwcqxmtNeyg6Ax86TdvWFQGBdi9evDBngMJptRaZKC1eHoFg==}
     dev: false
@@ -672,6 +699,22 @@ packages:
     resolution: {integrity: sha512-cmfVHpxWjjcETFt2WHnoFU6EmY69QcPJRlRNAooQlNe53Ke90vg1Ci/dkPffryJZaxxiRziP9bQrV8lDVCn3Fw==}
     dependencies:
       glob: 7.1.7
+    dev: false
+
+  /@next/mdx/13.4.10_msthxdjvrhmdkfpqqalumiidgq:
+    resolution: {integrity: sha512-0ZbUIr3yuFFfkaYth2kNFAT0fbyylJTMqZy5zTdb7YGqvYjKFD8n75L3UYAX0g5mibGp3iETJ0I7730sW13PKQ==}
+    peerDependencies:
+      '@mdx-js/loader': '>=0.15.0'
+      '@mdx-js/react': '>=0.15.0'
+    peerDependenciesMeta:
+      '@mdx-js/loader':
+        optional: true
+      '@mdx-js/react':
+        optional: true
+    dependencies:
+      '@mdx-js/loader': 2.3.0
+      '@mdx-js/react': 2.3.0_react@18.2.0
+      source-map: 0.7.4
     dev: false
 
   /@next/swc-darwin-arm64/13.3.2-canary.13:
